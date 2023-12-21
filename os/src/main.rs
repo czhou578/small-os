@@ -1,5 +1,18 @@
 #![no_std]
+#![no_main]
 
-fn main() {
-    println!("Hello, world!");
+
+use core::panic::PanicInfo;
+
+#[panic_handler] //loop forever if panic *function never returns
+fn panic(_info: &PanicInfo) -> ! {
+    loop {}
 }
+
+#[no_mangle]
+pub extern "C" fn _start() -> ! {
+    loop {}
+}
+
+
+
