@@ -1,0 +1,7 @@
+cargo:rerun-if-changed=C:\Users\mycol\WebProjects\small-os\os\Cargo.toml
+cargo:rustc-link-search=native=C:\Users\mycol\WebProjects\small-os\os\target\bootimage\bootloader\x86_64-bootloader\release\build\bootloader-3d827a2bd9d1a3d1\out
+cargo:rustc-link-lib=static=kernel_bin-os
+cargo:rerun-if-env-changed=KERNEL
+cargo:rerun-if-env-changed=KERNEL_MANIFEST
+cargo:rerun-if-changed=C:\Users\mycol\WebProjects\small-os\os\target\x86_64-blog_os\debug\os
+cargo:rerun-if-changed=build.rs
